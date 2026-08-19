@@ -1,21 +1,16 @@
- const btn = document.getElementById("btn");
-        const heart = document.getElementById("lasti");
-        const msg = document.getElementById("msg");
+let btn=document.querySelector("button")
+let i=document.querySelector("#lasti")
+let div1=document.querySelector(".div3")
+let h3=document.querySelector("h3")
+let a=40
+let b=0
+btn.onclick = () => {
+    a += 40;
+    b+=1
+    i.style.fontSize = `${a}px`;
+    if(b==16){
+        i.style.display = "none";
+        h3.style.display="inline"
 
-        let currentScale = 1;
-        let count = 0;
-        const total = 10;
-
-        btn.addEventListener("click", () => {
-            count++;
-            currentScale += 0.35;
-            
-            // التكبير بـ transform كيخدم فكاع المتصفحات وبلا مشاكل
-            heart.style.transform = scale(`${currentScale}`);
-
-            if (count >= total) {
-                heart.style.display = "none";
-                msg.style.display = "block";
-                btn.style.display = "none";
-            }
-        });
+    }
+}
