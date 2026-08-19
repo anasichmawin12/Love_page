@@ -1,20 +1,21 @@
-const btn = document.querySelector("#btn");
-const heartIcon = document.querySelector("#lasti");
-const message = document.querySelector("h3");
+ const btn = document.getElementById("btn");
+        const heart = document.getElementById("lasti");
+        const msg = document.getElementById("msg");
 
-let size = 40;
-let clickCount = 0;
-const maxClicks = 8; // 8 كليكات كافية ومناسبة للشاشات د التلفون
+        let currentScale = 1;
+        let count = 0;
+        const total = 10;
 
-btn.onclick = () => {
-    clickCount += 1;
-    size += 25; // كيزيد بالحجم بلا ما يفركع الشاشة
+        btn.addEventListener("click", () => {
+            count++;
+            currentScale += 0.35;
+            
+            // التكبير بـ transform كيخدم فكاع المتصفحات وبلا مشاكل
+            heart.style.transform = scale(`${currentScale}`);
 
-    heartIcon.style.fontSize = `${size}px`;
-
-    if (clickCount >= maxClicks) {
-        heartIcon.style.display = "none";
-        message.style.display = "block"; // أحسن من inline للتنسيق
-        btn.style.display = "none"; // كيخفي البوتون فاش يظهر الميساج النهائي
-    }
-};
+            if (count >= total) {
+                heart.style.display = "none";
+                msg.style.display = "block";
+                btn.style.display = "none";
+            }
+        });
