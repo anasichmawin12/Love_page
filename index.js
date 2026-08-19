@@ -8,7 +8,7 @@ btn.onclick = () => {
     a += 40;
     b+=1
     i.style.fontSize = `${a}px`;
-    if(b==16){
+    if(b==11){
         i.style.display = "none";
         h3.style.display="inline"
 
