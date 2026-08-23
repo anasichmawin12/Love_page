@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../fontawesome-free-6.7.2-web/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <title>Document</title>
+    <style>
+        body{
+            background-color:#FFE6E9;
+            overflow-x: hidden;
+        }
+        .div1{
+            padding-top: 20px;
+            margin: auto;
+            min-height: 100vh;
+        }
+        .div1 .div2{
+            background-color:#FFF5F6;
+            border-radius: 10px;
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: auto;
+            width: 40vw;
+        }
+        .div1 .div2 div{
+            text-align: justify;
+            color: #D95F74;
+        }
+        h1{
+            color:#7C1F3C ;
+            font-family: "Playfair Display", serif;
+        }
+        p, button{
+            font-family: "Poppins", sans-serif;
+        }
+        .div3{
+            margin:auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        h3{
+            font-family: "Playfair Display", serif;
+            color:#7C1F3C ;
+            font-weight: bold;
+            margin: auto;
+        }
+        .div3 div{
+            width: 100vw;
+            display: none;
+        }
+        .div3 div h3{
+            margin-top: 20px;
+        }
+       video {
+    width: 30%;
+    height: 30%;
+    object-fit: cover;
+    display: block;
+    margin: auto;
+    border-radius: 15px;
+    border: 3px solid #FFF5F6;
+    box-shadow: 0 5px 20px rgba(124, 31, 60, 0.2);
+}
+
+@media (max-width: 600px) {
+
+    .div1 .div2 {
+        width: 95%;
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    .div3 div {
+        width: 100%;
+
+    }
+
+    video {
+        width: 80%;
+        height: auto;
+    }
+
+    h3 {
+        font-size: 20px;
+        line-height: 1.7;
+        padding: 0 15px;
+    }
+      #t1 {
+        top: 1%;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 14px;
+        white-space: nowrap;
+    }
+
+    #t2 {
+        bottom: 1%;
+        right: 2%;
+        font-size: 14px;
+        white-space: nowrap;
+    }
+}
+#t1{
+    position: absolute;
+    top: 2%;
+    font-family: "Playfair Display", serif;
+    color:#7C1F3C;
+    font-weight: bold;
+
+}
+#t2{
+    position: absolute;
+    bottom: 2%;
+    right:2%;
+    font-family: "Playfair Display", serif;
+    color:#7C1F3C;
+    font-weight: bold;
+
+}
+    </style>
+</head>
+<body>
+    <div class="div1">
+        <div class="div2">
+            <div>
+                <p style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif">Just for you alhbiba dyali</p>
+                <h1>FOR MY LOVE <br>HAFESSA <i style="color: #F04434; font-size: 40px;" class="fa-solid fa-heart"></i></h1>
+                <p>You are my life i love you</p>
+            <button class="btn btn-danger">BRKI HNAYA  <i style="color: rgb(245, 110, 222);" class="fa-solid fa-heart"></i> </button>
+            </div>
+        </div>
+        <br>
+        <div class="div3">
+            <div>
+            <video autoplay muted loop playsinline>
+                <source src="rose.mp4" type="video/mp4">
+            </video>
+            <h3 id="hhh" align="center">❤️🌹الحبيبة ديالي، كنبغيك بزاف، وكنحمق عليك، وغنبقى ديما فجنبك </h3>
+            </div>
+        </div>
+    </div>
+    <p id="t1">Anas ♡ Hafessa</p>
+    <p id="t2">Anas ♡ Hafessa</p>
+     <script src="index.js"></script>
+</body>
+</html>
